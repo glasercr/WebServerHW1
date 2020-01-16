@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ColeGlaserHW1
 {
-	public partial class Form1 : Form
+	public partial class fmOrder : Form
 	{
-		public Form1()
+		public fmOrder()
 		{
 			InitializeComponent();
 		}
@@ -21,5 +21,10 @@ namespace ColeGlaserHW1
 		{
 
 		}
-	}
+
+        private void btnSubmit_Click(object sender, System.EventArgs e)
+        {
+            MessageBox.Show("button1 was clicked");
+        }
+    }
 }

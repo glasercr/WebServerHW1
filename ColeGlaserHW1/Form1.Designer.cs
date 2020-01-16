@@ -1,6 +1,6 @@
 ﻿namespace ColeGlaserHW1
 {
-	partial class Form1
+	partial class fmOrder
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -202,6 +202,25 @@
             // cbState
             // 
             this.cbState.FormattingEnabled = true;
+            this.cbState.Items.AddRange(new object[] {
+            "AL",
+            "AK",
+            "AZ",
+            "AR",
+            "CA",
+            "CO",
+            "CT",
+            "DE",
+            "FL",
+            "GA",
+            "HI",
+            "ID",
+            "IL",
+            "IN",
+            "IA",
+            "KS",
+            "KY",
+            "LA"});
             this.cbState.Location = new System.Drawing.Point(124, 159);
             this.cbState.Name = "cbState";
             this.cbState.Size = new System.Drawing.Size(40, 21);
@@ -436,6 +455,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(181, 398);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(114, 23);
@@ -443,10 +463,12 @@
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // fmOrder
             // 
+            this.AcceptButton = this.btnSubmit;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSubmit);
@@ -457,8 +479,8 @@
             this.Controls.Add(this.lblOrderNo);
             this.Controls.Add(this.gbCustomer);
             this.Controls.Add(this.btnOrderNo);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "fmOrder";
+            this.Text = "OrderForm";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbCustomer.ResumeLayout(false);
             this.gbCustomer.PerformLayout();
