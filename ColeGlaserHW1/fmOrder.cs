@@ -32,7 +32,7 @@ namespace ColeGlaserHW1
             this.formSubmission(sender, e);
         }
 
-        private FormInfo formSubmission(object sender, EventArgs e)
+        private void formSubmission(object sender, EventArgs e)
         {
             CustomerInfo customerInfo = getCustomerInfo();
 
@@ -51,7 +51,12 @@ namespace ColeGlaserHW1
                 orderNumber = Convert.ToInt32(this.tbOrderNo.Text)
             };
 
-            return formInfo;
+            loadTotalsForm(formInfo);
+        }
+
+        private void loadTotalsForm(FormInfo formInfo)
+        {
+            fmTotals totalsForm = new fmTotals(formInfo);
         }
 
         #region Getting Data

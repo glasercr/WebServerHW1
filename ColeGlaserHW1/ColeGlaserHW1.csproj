@@ -47,19 +47,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerInfo.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="fmTotals.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="fmTotals.Designer.cs">
+      <DependentUpon>fmTotals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmOrder.Designer.cs">
+      <DependentUpon>fmOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="FormInfo.cs" />
     <Compile Include="PaymentInfo.cs" />
     <Compile Include="PizzaInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="fmOrder.resx">
+      <DependentUpon>fmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmTotals.resx">
+      <DependentUpon>fmTotals.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,5 +92,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

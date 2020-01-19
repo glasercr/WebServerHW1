@@ -31,6 +31,7 @@ namespace ColeGlaserHW1
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmOrder));
             this.tbOrderNo = new System.Windows.Forms.TextBox();
             this.gbCustomer = new System.Windows.Forms.GroupBox();
             this.cbState = new System.Windows.Forms.ComboBox();
@@ -70,10 +71,12 @@ namespace ColeGlaserHW1
             this.lblQuantity = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.pbPizzaTime = new System.Windows.Forms.PictureBox();
             this.gbCustomer.SuspendLayout();
             this.gbSize.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gbPayment.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPizzaTime)).BeginInit();
             this.SuspendLayout();
             // 
             // tbOrderNo
@@ -160,7 +163,7 @@ namespace ColeGlaserHW1
             this.cbState.Location = new System.Drawing.Point(124, 159);
             this.cbState.Name = "cbState";
             this.cbState.Size = new System.Drawing.Size(40, 21);
-            this.cbState.TabIndex = 13;
+            this.cbState.TabIndex = 5;
             // 
             // lblState
             // 
@@ -176,7 +179,7 @@ namespace ColeGlaserHW1
             this.tbPhone.Location = new System.Drawing.Point(124, 186);
             this.tbPhone.Name = "tbPhone";
             this.tbPhone.Size = new System.Drawing.Size(101, 20);
-            this.tbPhone.TabIndex = 9;
+            this.tbPhone.TabIndex = 6;
             // 
             // lblPhone
             // 
@@ -192,7 +195,7 @@ namespace ColeGlaserHW1
             this.tbZip.Location = new System.Drawing.Point(124, 128);
             this.tbZip.Name = "tbZip";
             this.tbZip.Size = new System.Drawing.Size(100, 20);
-            this.tbZip.TabIndex = 7;
+            this.tbZip.TabIndex = 4;
             // 
             // lblZip
             // 
@@ -208,7 +211,7 @@ namespace ColeGlaserHW1
             this.tbCity.Location = new System.Drawing.Point(125, 94);
             this.tbCity.Name = "tbCity";
             this.tbCity.Size = new System.Drawing.Size(100, 20);
-            this.tbCity.TabIndex = 5;
+            this.tbCity.TabIndex = 3;
             // 
             // lblCity
             // 
@@ -224,7 +227,7 @@ namespace ColeGlaserHW1
             this.tbAddress.Location = new System.Drawing.Point(125, 60);
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.Size = new System.Drawing.Size(100, 20);
-            this.tbAddress.TabIndex = 3;
+            this.tbAddress.TabIndex = 2;
             // 
             // lblAddress
             // 
@@ -287,7 +290,7 @@ namespace ColeGlaserHW1
             this.rbLarge.Location = new System.Drawing.Point(310, 20);
             this.rbLarge.Name = "rbLarge";
             this.rbLarge.Size = new System.Drawing.Size(52, 17);
-            this.rbLarge.TabIndex = 2;
+            this.rbLarge.TabIndex = 9;
             this.rbLarge.TabStop = true;
             this.rbLarge.Text = "Large";
             this.rbLarge.UseVisualStyleBackColor = true;
@@ -298,7 +301,7 @@ namespace ColeGlaserHW1
             this.rbMedium.Location = new System.Drawing.Point(150, 20);
             this.rbMedium.Name = "rbMedium";
             this.rbMedium.Size = new System.Drawing.Size(62, 17);
-            this.rbMedium.TabIndex = 1;
+            this.rbMedium.TabIndex = 8;
             this.rbMedium.TabStop = true;
             this.rbMedium.Text = "Medium";
             this.rbMedium.UseVisualStyleBackColor = true;
@@ -309,7 +312,7 @@ namespace ColeGlaserHW1
             this.rbSmall.Location = new System.Drawing.Point(7, 20);
             this.rbSmall.Name = "rbSmall";
             this.rbSmall.Size = new System.Drawing.Size(50, 17);
-            this.rbSmall.TabIndex = 0;
+            this.rbSmall.TabIndex = 7;
             this.rbSmall.TabStop = true;
             this.rbSmall.Text = "Small";
             this.rbSmall.UseVisualStyleBackColor = true;
@@ -321,7 +324,7 @@ namespace ColeGlaserHW1
             this.groupBox1.Controls.Add(this.cbCheese);
             this.groupBox1.Controls.Add(this.cbSausage);
             this.groupBox1.Controls.Add(this.cbPepperoni);
-            this.groupBox1.Location = new System.Drawing.Point(373, 151);
+            this.groupBox1.Location = new System.Drawing.Point(373, 132);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(381, 75);
             this.groupBox1.TabIndex = 5;
@@ -334,7 +337,7 @@ namespace ColeGlaserHW1
             this.cbOnion.Location = new System.Drawing.Point(70, 41);
             this.cbOnion.Name = "cbOnion";
             this.cbOnion.Size = new System.Drawing.Size(59, 17);
-            this.cbOnion.TabIndex = 4;
+            this.cbOnion.TabIndex = 11;
             this.cbOnion.Text = "Onions";
             this.cbOnion.UseVisualStyleBackColor = true;
             // 
@@ -344,7 +347,7 @@ namespace ColeGlaserHW1
             this.cbOlives.Location = new System.Drawing.Point(234, 18);
             this.cbOlives.Name = "cbOlives";
             this.cbOlives.Size = new System.Drawing.Size(55, 17);
-            this.cbOlives.TabIndex = 3;
+            this.cbOlives.TabIndex = 14;
             this.cbOlives.Text = "Olives";
             this.cbOlives.UseVisualStyleBackColor = true;
             // 
@@ -354,7 +357,7 @@ namespace ColeGlaserHW1
             this.cbCheese.Location = new System.Drawing.Point(181, 41);
             this.cbCheese.Name = "cbCheese";
             this.cbCheese.Size = new System.Drawing.Size(89, 17);
-            this.cbCheese.TabIndex = 2;
+            this.cbCheese.TabIndex = 13;
             this.cbCheese.Text = "Extra Cheese";
             this.cbCheese.UseVisualStyleBackColor = true;
             // 
@@ -364,7 +367,7 @@ namespace ColeGlaserHW1
             this.cbSausage.Location = new System.Drawing.Point(126, 19);
             this.cbSausage.Name = "cbSausage";
             this.cbSausage.Size = new System.Drawing.Size(68, 17);
-            this.cbSausage.TabIndex = 1;
+            this.cbSausage.TabIndex = 12;
             this.cbSausage.Text = "Sausage";
             this.cbSausage.UseVisualStyleBackColor = true;
             // 
@@ -374,7 +377,7 @@ namespace ColeGlaserHW1
             this.cbPepperoni.Location = new System.Drawing.Point(25, 18);
             this.cbPepperoni.Name = "cbPepperoni";
             this.cbPepperoni.Size = new System.Drawing.Size(74, 17);
-            this.cbPepperoni.TabIndex = 0;
+            this.cbPepperoni.TabIndex = 10;
             this.cbPepperoni.Text = "Pepperoni";
             this.cbPepperoni.UseVisualStyleBackColor = true;
             // 
@@ -390,7 +393,7 @@ namespace ColeGlaserHW1
             this.gbPayment.Controls.Add(this.lblCoupon);
             this.gbPayment.Controls.Add(this.cbQuantity);
             this.gbPayment.Controls.Add(this.lblQuantity);
-            this.gbPayment.Location = new System.Drawing.Point(373, 251);
+            this.gbPayment.Location = new System.Drawing.Point(373, 232);
             this.gbPayment.Name = "gbPayment";
             this.gbPayment.Size = new System.Drawing.Size(381, 167);
             this.gbPayment.TabIndex = 6;
@@ -407,7 +410,7 @@ namespace ColeGlaserHW1
             this.cbMethod.Location = new System.Drawing.Point(139, 72);
             this.cbMethod.Name = "cbMethod";
             this.cbMethod.Size = new System.Drawing.Size(121, 21);
-            this.cbMethod.TabIndex = 24;
+            this.cbMethod.TabIndex = 17;
             // 
             // lblExpiry
             // 
@@ -423,14 +426,14 @@ namespace ColeGlaserHW1
             this.dtExpiry.Location = new System.Drawing.Point(139, 141);
             this.dtExpiry.Name = "dtExpiry";
             this.dtExpiry.Size = new System.Drawing.Size(200, 20);
-            this.dtExpiry.TabIndex = 22;
+            this.dtExpiry.TabIndex = 19;
             // 
             // tbCCNumber
             // 
             this.tbCCNumber.Location = new System.Drawing.Point(139, 108);
             this.tbCCNumber.Name = "tbCCNumber";
             this.tbCCNumber.Size = new System.Drawing.Size(101, 20);
-            this.tbCCNumber.TabIndex = 21;
+            this.tbCCNumber.TabIndex = 18;
             // 
             // lblCard
             // 
@@ -455,7 +458,7 @@ namespace ColeGlaserHW1
             this.tbCoupon.Location = new System.Drawing.Point(253, 46);
             this.tbCoupon.Name = "tbCoupon";
             this.tbCoupon.Size = new System.Drawing.Size(101, 20);
-            this.tbCoupon.TabIndex = 17;
+            this.tbCoupon.TabIndex = 16;
             // 
             // lblCoupon
             // 
@@ -496,10 +499,10 @@ namespace ColeGlaserHW1
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(26, 398);
+            this.btnSubmit.Location = new System.Drawing.Point(432, 415);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(114, 23);
-            this.btnSubmit.TabIndex = 7;
+            this.btnSubmit.TabIndex = 20;
             this.btnSubmit.Text = "Submit Order";
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
@@ -507,13 +510,23 @@ namespace ColeGlaserHW1
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(181, 398);
+            this.btnExit.Location = new System.Drawing.Point(587, 415);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(114, 23);
-            this.btnExit.TabIndex = 8;
+            this.btnExit.TabIndex = 21;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.frmOrder_Close);
+            // 
+            // pbPizzaTime
+            // 
+            this.pbPizzaTime.Image = ((System.Drawing.Image)(resources.GetObject("pbPizzaTime.Image")));
+            this.pbPizzaTime.Location = new System.Drawing.Point(41, 296);
+            this.pbPizzaTime.Name = "pbPizzaTime";
+            this.pbPizzaTime.Size = new System.Drawing.Size(210, 142);
+            this.pbPizzaTime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPizzaTime.TabIndex = 22;
+            this.pbPizzaTime.TabStop = false;
             // 
             // fmOrder
             // 
@@ -521,6 +534,7 @@ namespace ColeGlaserHW1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pbPizzaTime);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.gbPayment);
@@ -541,6 +555,7 @@ namespace ColeGlaserHW1
             this.groupBox1.PerformLayout();
             this.gbPayment.ResumeLayout(false);
             this.gbPayment.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPizzaTime)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -587,6 +602,7 @@ namespace ColeGlaserHW1
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnExit;
         private ComboBox cbMethod;
+        private PictureBox pbPizzaTime;
     }
 }
 

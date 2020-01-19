@@ -14,7 +14,7 @@ namespace ColeGlaserHW1
 
         public string PaymentMethod { get; set; }
 
-        public int CCNumber { get; set; }
+        public int? CCNumber { get; set; }
 
         public DateTime ExpiryDate { get; set; }
     }
